@@ -1,0 +1,50 @@
+.user__page__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.user__page__container img {
+    width: clamp(150px, 30vw, 400px);
+    height: clamp(150px, 30vw, 400px);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user__page__card__info {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.user__page__card__info :nth-child(1) {
+    font-size: clamp(20px, 5vw, 30px);    
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.user__page__card__info :nth-child(2), :nth-child(1), :nth-child(3) {
+    font-size: clamp(12px, 3vw, 24px);
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.contacts__container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contacts__container p {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 500px) {
+    .user__page__card__info {
+        width: 250px;
+    }
+}
